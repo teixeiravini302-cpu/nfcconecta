@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#292a2b">
+  <meta name="description" content="Acesse o site e fale com a NFC Conecta pelo WhatsApp.">
+  <title>NFC Conecta | Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --bg:#292a2b; --panel:#343637; --text:#f2efe8; --muted:#c6c4bd; --accent:#a8c3a0; --line:rgba(242,239,232,.13); }
+    * { box-sizing:border-box }
+    body { min-height:100svh; margin:0; padding:28px 18px; display:grid; place-items:center; overflow-x:hidden; color:var(--text); background:radial-gradient(ellipse at 50% 0%, #424542 0, var(--bg) 58%); font-family:'DM Sans',sans-serif }
+    main { width:min(100%,440px); text-align:center }
+    .mark { width:78px; height:78px; margin:0 auto 20px; display:grid; place-items:center; border:1px solid rgba(168,195,160,.45); border-radius:24px; background:linear-gradient(145deg,#3c423e,#303231); box-shadow:0 14px 40px #0003; color:var(--accent); font:700 22px 'Space Grotesk',sans-serif; letter-spacing:-2px }
+    h1 { margin:0; font:700 clamp(30px,8vw,40px)/1.05 'Space Grotesk',sans-serif; letter-spacing:-1.6px }
+    .intro { margin:11px auto 27px; max-width:330px; color:var(--muted); font-size:15px; line-height:1.55 }
+    .status { display:inline-flex; align-items:center; gap:8px; margin-bottom:24px; padding:7px 12px; border:1px solid var(--line); border-radius:99px; color:#d5d6cf; font-size:12px }
+    .dot { width:8px; height:8px; border-radius:50%; background:#63d784; box-shadow:0 0 0 0 #63d78488; animation:pulse 1.8s infinite }
+    .links { display:grid; gap:12px }
+    a.button { min-height:60px; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:15px 18px; border:1px solid var(--line); border-radius:17px; color:var(--text); background:linear-gradient(135deg,#393b3b,#323434); text-align:left; text-decoration:none; transition:transform .2s,border-color .2s,background .2s; -webkit-tap-highlight-color:transparent }
+    a.button:hover, a.button:focus-visible { transform:translateY(-2px); border-color:#a8c3a088; background:#3c403d; outline:none }
+    a.primary { color:#202321; border-color:transparent; background:var(--accent); font-weight:700 }
+    a.primary:hover, a.primary:focus-visible { background:#bbd2b4 }
+    .label { display:flex; align-items:center; gap:13px; font-size:15px; font-weight:600 }
+    .icon { width:30px; height:30px; flex:none; display:grid; place-items:center; border-radius:10px; background:#ffffff12; font-size:16px }
+    .primary .icon { background:#20232115 }
+    .arrow { color:currentColor; opacity:.72; font-size:20px }
+    footer { margin-top:28px; color:#aaa9a3; font-size:12px }
+    footer span { color:var(--accent) }
+    @keyframes pulse { 70% { box-shadow:0 0 0 7px #63d78400 } 100% { box-shadow:0 0 0 0 #63d78400 } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">NFC</div>
+    <h1>NFC Conecta</h1>
+    <p class="intro">Sua conexão com clientes começa com um toque.</p>
+    <div class="status"><span class="dot" aria-hidden="true"></span>Conexão ativa</div>
+    <nav class="links" aria-label="Links da NFC Conecta">
+      <a class="button primary" href="https://teixeiravini302-cpu.github.io/nfcconecta/">
+        <span class="label"><span class="icon" aria-hidden="true">↗</span>Conheça nosso site</span><span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a class="button" href="https://wa.me/5547984356749?text=Ol%C3%A1%21%20Vim%20pelo%20Instagram%20e%20quero%20saber%20mais%20sobre%20a%20NFC%20Conecta.">
+        <span class="label"><span class="icon" aria-hidden="true">☏</span>Fale pelo WhatsApp</span><span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </nav>
+    <footer>Feito para aproximar <span>pessoas e marcas</span>.</footer>
+  </main>
+</body>
+</html>
+
